@@ -1,0 +1,6 @@
+[run]
+branch = True
+source = neutron_interconnection
+
+[report]
+ignore_errors = True
