@@ -1,0 +1,9 @@
+Code-Review+2: Thomas Morin <tmmorin.orange@gmail.com>
+Code-Review+2: Slawek Kaplonski <skaplons@redhat.com>
+Workflow+1: Slawek Kaplonski <skaplons@redhat.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Wed, 16 Jan 2019 20:39:46 +0000
+Reviewed-on: https://review.openstack.org/626867
+Project: openstack/neutron-interconnection
+Branch: refs/heads/master
