@@ -6,4 +6,5 @@
    :maxdepth: 2
 
    contributing
+   lifecycle_fsm
 
