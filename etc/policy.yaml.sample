@@ -1,0 +1,31 @@
+# Create an interconnection
+# POST  /inter/interconnections
+#"create_interconnection": "rule:admin_or_owner"
+
+# Update an interconnection
+# PUT  /inter/interconnections/{id}
+#"update_interconnection": "rule:admin_or_owner"
+
+# Delete an interconnection
+# DELETE  /inter/interconnections/{id}
+#"delete_interconnection": "rule:admin_or_owner"
+
+# Get interconnections
+# GET  /inter/interconnections
+# GET  /inter/interconnections/{id}
+#"get_interconnection": "rule:admin_or_owner"
+
+# Get ``local_parameters`` attributes of interconnections
+# GET  /inter/interconnections
+# GET  /inter/interconnections/{id}
+#"get_interconnection:local_parameters": "rule:context_is_admin or role:neutron_interconnection_peer"
+
+# Get ``remote_parameters`` attributes of interconnections
+# GET  /inter/interconnections
+# GET  /inter/interconnections/{id}
+#"get_interconnection:remote_parameters": "rule:context_is_admin or role:neutron_interconnection_peer"
+
+# Refresh an interconnection
+# PUT  /inter/interconnections/{id}/refresh
+#"refresh": "rule:admin_or_owner"
+
