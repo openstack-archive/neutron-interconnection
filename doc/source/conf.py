@@ -23,7 +23,8 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     'openstackdocstheme',
-    #'sphinx.ext.intersphinx',
+    'oslo_policy.sphinxext',
+    'oslo_policy.sphinxpolicygen',
 ]
 
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
@@ -38,7 +39,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'neutron-interconnection'
-copyright = u'2017, OpenStack Developers'
+copyright = u'2019, OpenStack Foundation'
 
 # openstackdocstheme options
 repository_name = 'openstack/neutron-interconnection'
@@ -75,8 +76,13 @@ latex_documents = [
     ('index',
      '%s.tex' % project,
      u'%s Documentation' % project,
-     u'OpenStack Developers', 'manual'),
+     u'OpenStack Foundation', 'manual'),
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
 #intersphinx_mapping = {'http://docs.python.org/': None}
+
+# -- Options for oslo_policy.sphinxpolicygen ---------------------------------
+
+policy_generator_config_file = '../../etc/oslo-policy-generator/policy.conf'
+sample_policy_basename = '_static/neutron-interconnection'
