@@ -23,7 +23,8 @@ sys.path.insert(0, os.path.abspath('../..'))
 extensions = [
     'sphinx.ext.autodoc',
     'openstackdocstheme',
-    #'sphinx.ext.intersphinx',
+    'oslo_policy.sphinxext',
+    'oslo_policy.sphinxpolicygen',
 ]
 
 # autodoc generation is a bit aggressive and a nuisance when doing heavy
@@ -80,3 +81,8 @@ latex_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 #intersphinx_mapping = {'http://docs.python.org/': None}
+
+# -- Options for oslo_policy.sphinxpolicygen ---------------------------------
+
+policy_generator_config_file = '../../etc/oslo-policy-generator/policy.conf'
+sample_policy_basename = '_static/neutron-interconnection'
