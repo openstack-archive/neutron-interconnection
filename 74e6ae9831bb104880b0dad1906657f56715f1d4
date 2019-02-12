@@ -1,0 +1,9 @@
+Code-Review+2: Akihiro Motoki <amotoki@gmail.com>
+Code-Review+2: Slawek Kaplonski <skaplons@redhat.com>
+Workflow+1: Slawek Kaplonski <skaplons@redhat.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 12 Feb 2019 22:23:42 +0000
+Reviewed-on: https://review.openstack.org/633534
+Project: openstack/neutron-interconnection
+Branch: refs/heads/master
