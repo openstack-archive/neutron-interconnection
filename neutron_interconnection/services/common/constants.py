@@ -13,6 +13,8 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
+INTERCONNECTION = 'interconnection'
+
 TO_VALIDATE = 'TO_VALIDATE'
 
 PRE_VALIDATE = 'PRE_VALIDATE'
