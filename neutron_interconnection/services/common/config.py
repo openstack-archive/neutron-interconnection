@@ -24,6 +24,8 @@ neutron_interconnection_opts = [
                help=_('Remote Neutron authentication password')),
     cfg.StrOpt('project',
                help=_('Remote Neutron authentication project')),
+    cfg.IntOpt('check_state_interval', default=10,
+               help=_('Check state interval in seconds.')),
 ]
 
 cfg.CONF.register_opts(neutron_interconnection_opts, "neutron_interconnection")
