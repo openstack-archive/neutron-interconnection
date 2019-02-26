@@ -20,3 +20,8 @@ def list_remote_keystone_auth_opts():
     return [
         ('remote_keystone_auth', inter_config.remote_keystone_auth_opts),
     ]
+
+def list_state_scheduler_opts():
+    return [
+        ('state_scheduler', inter_config.state_scheduler_opts),
+    ]
