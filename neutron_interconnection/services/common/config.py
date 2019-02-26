@@ -24,6 +24,14 @@ remote_keystone_auth_opts = [
                help=_('Remote Keystone authentication password')),
     cfg.StrOpt('project',
                help=_('Remote Keystone authentication project')),
+    cfg.IntOpt('check_state_interval', default=10,
+               help=_('Check state interval in seconds.')),
+]
+
+state_scheduler_opts = [
+    cfg.IntOpt('check_state_interval', default=10,
+               help=_('Check state interval in seconds.')),
 ]
 
 cfg.CONF.register_opts(remote_keystone_auth_opts, "remote_keystone_auth")
+cfg.CONF.register_opts(state_scheduler_opts, "state_scheduler")
