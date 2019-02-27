@@ -26,6 +26,15 @@ neutron_interconnection_opts = [
                help=_('Remote Neutron authentication project')),
     cfg.IntOpt('check_state_interval', default=10,
                help=_('Check state interval in seconds.')),
+    cfg.StrOpt('network_l2_driver',
+               default='dummy',
+               help=_('Network L2 connectivity driver')),
+    cfg.StrOpt('network_l3_driver',
+               default='dummy',
+               help=_('Network L3 connectivity driver')),
+    cfg.StrOpt('router_driver',
+               default='dummy',
+               help=_('Router connectivity driver')),
 ]
 
 cfg.CONF.register_opts(neutron_interconnection_opts, "neutron_interconnection")
