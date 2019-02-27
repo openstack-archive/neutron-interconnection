@@ -13,22 +13,18 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-from neutron_interconnection.services.common import config as inter_config
+from neutron_lib import exceptions as n_exc
+
+from neutron_interconnection._i18n import _
 
 
-def list_remote_keystone_auth_opts():
-    return [
-        ('remote_keystone_auth', inter_config.remote_keystone_auth_opts),
-    ]
+class InterconnectionDriverError(n_exc.NeutronException):
+    message = _("Interconnection driver %(method)s call failed.")
 
 
-def list_state_scheduler_opts():
-    return [
-        ('state_scheduler', inter_config.state_scheduler_opts),
-    ]
+class InterconnectionNotFound(n_exc.NotFound):
+    message = _("Interconnection %(id)s could not be found.")
 
 
-def list_drivers_opts():
-    return [
-        ('drivers', inter_config.drivers_opts),
-    ]
+class IncompatibleInterconnectionType(n_exc.NeutronException):
+    message = _("Interconnection type incompatible with symmetric one")
