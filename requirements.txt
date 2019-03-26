@@ -6,8 +6,9 @@ pbr>=2.0 # Apache-2.0
 oslo.policy>=1.30.0 # Apache-2.0
 oslo.utils>=3.33.0 # Apache-2.0
 automaton>=1.15.0 # Apache-2.0
+neutron-lib>=1.25.0 # Apache-2.0
 
 # OpenStack CI will install the following projects from git
 # if they are in the required-projects list for a job:
+networking-bgpvpn>=9.0.0 # Apache-2.0
 neutron>=13.0.0.0b1 # Apache-2.0
-neutron-lib>=1.14.0 # Apache-2.0
