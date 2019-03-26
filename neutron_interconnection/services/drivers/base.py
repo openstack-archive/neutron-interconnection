@@ -35,10 +35,9 @@ INTERCONNECTION_DRIVER_ENTRY_POINT_PREFIX = "neutron_interconnection.driver"
 
 def register_drivers():
     drivers = {}
-    for interconnection_type in inter_api_def. VALID_TYPES:
+    for interconnection_type in inter_api_def.VALID_TYPES:
         driver_name = cfg.CONF.drivers.get(
             interconnection_type + '_driver')
-
         LOG.debug("Registering interconnection driver for %s, with %s",
                   interconnection_type, driver_name)
         try:
