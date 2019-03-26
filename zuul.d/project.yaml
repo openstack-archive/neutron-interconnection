@@ -11,32 +11,42 @@
         - openstack-tox-lower-constraints:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
         - openstack-tox-pep8:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
         - openstack-tox-py27:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
         - openstack-tox-py35:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
         - openstack-tox-py36:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
     gate:
       jobs:
         - openstack-tox-lower-constraints:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
         - openstack-tox-pep8:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
         - openstack-tox-py27:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
         - openstack-tox-py35:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
         - openstack-tox-py36:
             required-projects:
               - openstack/neutron-lib
+              - openstack/networking-bgpvpn
