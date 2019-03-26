@@ -14,6 +14,7 @@
 #    under the License.
 
 from neutron_interconnection.services.common import config as inter_config
+from neutron_interconnection.services.drivers.bgpvpn import db as bgpvpn_db
 
 
 def list_remote_keystone_auth_opts():
@@ -31,4 +32,10 @@ def list_state_scheduler_opts():
 def list_drivers_opts():
     return [
         ('drivers', inter_config.drivers_opts),
+    ]
+
+
+def list_bgpvpn_driver_opts():
+    return [
+        ('bgpvpn_driver', bgpvpn_db.bgpvpn_driver_opts),
     ]
