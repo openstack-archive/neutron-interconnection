@@ -52,6 +52,8 @@ output/*/index.html
 
 # Sphinx
 doc/build
+doc/source/_static/config-samples/*.sample
+etc/**/*.sample
 
 # pbr generates these
 AUTHORS
