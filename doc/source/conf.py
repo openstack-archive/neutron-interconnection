@@ -84,5 +84,19 @@ latex_documents = [
 
 # -- Options for oslo_policy.sphinxpolicygen ---------------------------------
 
-policy_generator_config_file = '../../etc/oslo-policy-generator/policy.conf'
-sample_policy_basename = '_static/neutron-interconnection'
+_config_generator_config_files = [
+    'neutron-interconnection.conf',
+]
+
+def _get_config_generator_config_definition(conf_file):
+    config_file_path = '../../etc/oslo-config-generator/%s' % conf_file
+    # oslo_config.sphinxconfiggen appends '.conf.sample' to the filename,
+    # strip file extentension (.conf or .ini).
+    output_file_path = '_static/config-samples/%s' % conf_file.rsplit('.', 1)[0]
+    return (config_file_path, output_file_path)
+
+
+config_generator_config_file = [
+    _get_config_generator_config_definition(conf_file)
+    for conf_file in _config_generator_config_files
+]
