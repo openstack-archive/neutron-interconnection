@@ -10,7 +10,7 @@ Note that this is a hard requirement.
 
 * Free software: Apache license
 * Documentation: https://docs.openstack.org/neutron-interconnection/latest
-* Source: https://git.openstack.org/cgit/openstack/neutron-interconnection
+* Source: https://opendev.org/openstack/neutron-interconnection
 * Bugs: https://bugs.launchpad.net/neutron-interconnectionFeatures
 
 --------
