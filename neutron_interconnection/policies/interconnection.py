@@ -26,7 +26,7 @@ rules = [
         [
             {
                 'method': 'POST',
-                'path': '/inter/interconnections',
+                'path': '/interconnection/interconnections',
             },
         ]
     ),
@@ -38,7 +38,7 @@ rules = [
         [
             {
                 'method': 'PUT',
-                'path': '/inter/interconnections/{id}',
+                'path': '/interconnection/interconnections/{id}',
             },
         ]
     ),
@@ -50,23 +50,23 @@ rules = [
         [
             {
                 'method': 'DELETE',
-                'path': '/inter/interconnections/{id}',
+                'path': '/interconnection/interconnections/{id}',
             },
         ]
     ),
 
     policy.DocumentedRuleDefault(
         'get_interconnection',
-        base.RULE_ADMIN_OR_OWNER,
+        base.RULE_ADMIN_OR_OWNER_OR_NEUTRON_INTERCONNECTION_PEER,
         'Get interconnections',
         [
             {
                 'method': 'GET',
-                'path': '/inter/interconnections',
+                'path': '/interconnection/interconnections',
             },
             {
                 'method': 'GET',
-                'path': '/inter/interconnections/{id}',
+                'path': '/interconnection/interconnections/{id}',
             },
         ]
     ),
@@ -78,11 +78,11 @@ rules = [
         [
             {
                 'method': 'GET',
-                'path': '/inter/interconnections',
+                'path': '/interconnection/interconnections',
             },
             {
                 'method': 'GET',
-                'path': '/inter/interconnections/{id}',
+                'path': '/interconnection/interconnections/{id}',
             },
         ]
     ),
@@ -94,11 +94,11 @@ rules = [
         [
             {
                 'method': 'GET',
-                'path': '/inter/interconnections',
+                'path': '/interconnection/interconnections',
             },
             {
                 'method': 'GET',
-                'path': '/inter/interconnections/{id}',
+                'path': '/interconnection/interconnections/{id}',
             },
         ]
     ),
@@ -110,7 +110,7 @@ rules = [
         [
             {
                 'method': 'PUT',
-                'path': '/inter/interconnections/{id}/refresh',
+                'path': '/interconnection/interconnections/{id}/refresh',
             },
         ]
     ),

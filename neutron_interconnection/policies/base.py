@@ -18,6 +18,9 @@ RULE_ADMIN_OR_OWNER = 'rule:admin_or_owner'
 RULE_ANY = 'rule:regular_user'
 
 RULE_NEUTRON_INTERCONNECTION_PEER = 'role:neutron_interconnection_peer'
+RULE_ADMIN_OR_OWNER_OR_NEUTRON_INTERCONNECTION_PEER = (
+    'rule:admin_or_owner or role:neutron_interconnection_peer'
+)
 RULE_ADMIN_OR_NEUTRON_INTERCONNECTION_PEER = (
     'rule:context_is_admin or role:neutron_interconnection_peer'
 )
