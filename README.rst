@@ -1,18 +1,10 @@
-===============================
-neutron-interconnection
-===============================
+This project is no longer maintained.
 
-This project implements a Neutron API extension to provide network connectivity between two or more Openstack deployments or regions.
+The contents of this repository are still available in the Git
+source code management system.  To see the contents of this
+repository before it reached its end of life, please check out the
+previous commit with "git checkout HEAD^1".
 
-Please fill here a long description which must be at least 3 lines wrapped on
-80 cols, so that distribution package maintainers can use it in their packages.
-Note that this is a hard requirement.
-
-* Free software: Apache license
-* Documentation: https://docs.openstack.org/neutron-interconnection/latest
-* Source: https://git.openstack.org/cgit/openstack/neutron-interconnection
-* Bugs: https://bugs.launchpad.net/neutron-interconnectionFeatures
-
---------
-
-* TODO
+For any further questions, please email
+openstack-discuss@lists.openstack.org or join #openstack-dev on
+Freenode.
